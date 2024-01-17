@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightBlue"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/transactionDetailsIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction ID"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TransactionDetailsType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TransactionDetailsType"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TransactionDetailsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Type"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TransDetailsTextDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TransDetailsTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/transactionDetailsIDText" />
+
+    <TextView
+        android:id="@+id/TransDetailsTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TransDetailsTextAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TransDetailsTextAmount"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionDetailsType" />
+
+    <TextView
+        android:id="@+id/TransDetailsTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TransDetailsTextCurrent"
+        app:layout_constraintStart_toStartOf="@+id/TransDetailsTextCurrent"
+        app:layout_constraintTop_toBottomOf="@+id/TransDetailsTextDate" />
+
+    <TextView
+        android:id="@+id/TransDetailsTextCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Balance"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/TransDetailTextAcc"
+        app:layout_constraintStart_toStartOf="@+id/TransDetailTextAcc"
+        app:layout_constraintTop_toBottomOf="@+id/TransDetailsTextAmount" />
+
+    <TextView
+        android:id="@+id/TransDetailTextAcc"
+        android:layout_width="157dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="25dp"
+        android:text="Account"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransDetailsTextCurrent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
