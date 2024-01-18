@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:background="#454444">
+    android:layout_height="140dp"
+    android:background="@color/green">
 
     <TextView
         android:id="@+id/dataTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:background="#454444"
         android:text="Date"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/typeTextView"
@@ -26,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#454444"
         android:text="ID"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/dataTextView"
@@ -39,7 +37,6 @@
         android:id="@+id/amountTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#454444"
         android:text="Amount"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/balanceTextView"
@@ -52,7 +49,6 @@
         android:id="@+id/balanceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#454444"
         android:text="Balance"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/accountTextView"
@@ -66,10 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:background="#454444"
         android:text="Account"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/balanceTextView"
@@ -79,14 +73,22 @@
         android:id="@+id/typeTextView"
         android:layout_width="190dp"
         android:layout_height="18dp"
-        android:layout_marginEnd="8dp"
-        android:background="#454444"
         android:text="Type"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/amountTextview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/dataTextView"
         app:layout_constraintTop_toBottomOf="@+id/dataTextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/typeTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kfh" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

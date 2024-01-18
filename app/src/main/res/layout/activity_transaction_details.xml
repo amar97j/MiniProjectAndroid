@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/lightBlue"
     android:layout_width="match_parent"
-    android:layout_height="300dp">
+    android:layout_height="match_parent"
+    android:background="@color/green">
 
     <TextView
         android:id="@+id/transactionDetailsIDText"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Transaction ID"
         android:textColor="@color/white"
+        android:background="@color/darkGreen"
         app:layout_constraintBottom_toTopOf="@+id/TransactionDetailsType"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Transaction Type"
+        android:background="@color/darkGreen"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/TransDetailsTextDate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:background="@color/darkGreen"
         android:text="Date"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/TransDetailsTextAmount"
@@ -48,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Amount"
+        android:background="@color/darkGreen"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/TransDetailsTextCurrent"
         app:layout_constraintStart_toStartOf="@+id/TransDetailsTextCurrent"
@@ -58,6 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Current Balance"
+        android:background="@color/darkGreen"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/TransDetailTextAcc"
         app:layout_constraintStart_toStartOf="@+id/TransDetailTextAcc"
@@ -69,8 +74,22 @@
         android:layout_height="18dp"
         android:layout_marginStart="25dp"
         android:text="Account"
+        android:background="@color/darkGreen"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TransDetailsTextCurrent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/darkGreen"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/transactionDetailsIDText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kfh" />
 </androidx.constraintlayout.widget.ConstraintLayout>
